@@ -1,0 +1,2 @@
+Invoking command in '/all_sensors_launch/build/all_sensors_launch': /usr/bin/cmake /all_sensors_launch -DCMAKE_INSTALL_PREFIX=/all_sensors_launch/install/all_sensors_launch
+Invoked command in '/all_sensors_launch/build/all_sensors_launch' returned '1': /usr/bin/cmake /all_sensors_launch -DCMAKE_INSTALL_PREFIX=/all_sensors_launch/install/all_sensors_launch

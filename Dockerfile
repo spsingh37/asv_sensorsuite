@@ -73,16 +73,28 @@ RUN . /opt/ros/humble/setup.sh && \
     colcon build
 
 RUN apt-get update && \
-    apt-get install -y software-properties-common && \
+    apt-get install -y software-properties-common curl && \
     rm -rf /var/lib/apt/lists/*
     
 # install realsense packages
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-key F6E65AC044F831AC80A06380C8B3A55A6F3EFCDE || apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key F6E65AC044F831AC80A06380C8B3A55A6F3EFCDE && \
     add-apt-repository -y "deb https://librealsense.intel.com/Debian/apt-repo $(lsb_release -cs) main" -u && \
     apt-get install -y librealsense2-utils && apt-get install librealsense2-dev && \
-    sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list' && \
-    apt install -y curl && curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | apt-key add - && \
-    apt install -y ros-humble-realsense2-*
+    add-apt-repository universe 
+
+#RUN apt install -y curl && curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+#RUN echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null && \
+#    apt install -y ros-humble-realsense2-*
+
+# Clean up any pre-existing ROS source list and keyring files
+RUN rm -f /etc/apt/sources.list.d/ros2* && rm -f /usr/share/keyrings/ros2-latest-archive-keyring.gpg
+
+# Download the new ROS key and set up the repository
+RUN curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg && \
+    echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | tee /etc/apt/sources.list.d/ros2.list > /dev/null
+
+# Update and install ROS realsense package
+RUN apt-get update && apt-get install -y ros-humble-realsense2-*
 
 COPY all_sensors_launch all_sensors_launch
 

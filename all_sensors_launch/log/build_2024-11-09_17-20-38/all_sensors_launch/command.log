@@ -1,0 +1,6 @@
+Invoking command in '/all_sensors_launch/build/all_sensors_launch': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /all_sensors_launch -DCMAKE_INSTALL_PREFIX=/all_sensors_launch/install/all_sensors_launch
+Invoked command in '/all_sensors_launch/build/all_sensors_launch' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /all_sensors_launch -DCMAKE_INSTALL_PREFIX=/all_sensors_launch/install/all_sensors_launch
+Invoking command in '/all_sensors_launch/build/all_sensors_launch': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /all_sensors_launch/build/all_sensors_launch -- -j4 -l4
+Invoked command in '/all_sensors_launch/build/all_sensors_launch' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /all_sensors_launch/build/all_sensors_launch -- -j4 -l4
+Invoking command in '/all_sensors_launch/build/all_sensors_launch': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /all_sensors_launch/build/all_sensors_launch
+Invoked command in '/all_sensors_launch/build/all_sensors_launch' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /all_sensors_launch/build/all_sensors_launch

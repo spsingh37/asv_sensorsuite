@@ -1,0 +1,22 @@
+[0.061s] Invoking command in '/all_sensors_launch/build/all_sensors_launch': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /all_sensors_launch/build/all_sensors_launch -- -j4 -l4
+[0.212s] Invoked command in '/all_sensors_launch/build/all_sensors_launch' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /all_sensors_launch/build/all_sensors_launch -- -j4 -l4
+[0.341s] Invoking command in '/all_sensors_launch/build/all_sensors_launch': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /all_sensors_launch/build/all_sensors_launch
+[0.368s] -- Install configuration: ""
+[0.369s] -- Up-to-date: /all_sensors_launch/install/all_sensors_launch/share/all_sensors_launch/launch
+[0.369s] -- Installing: /all_sensors_launch/install/all_sensors_launch/share/all_sensors_launch/launch/all_sensors_launch.py
+[0.370s] -- Up-to-date: /all_sensors_launch/install/all_sensors_launch/share/ament_index/resource_index/package_run_dependencies/all_sensors_launch
+[0.371s] -- Up-to-date: /all_sensors_launch/install/all_sensors_launch/share/ament_index/resource_index/parent_prefix_path/all_sensors_launch
+[0.371s] -- Up-to-date: /all_sensors_launch/install/all_sensors_launch/share/all_sensors_launch/environment/ament_prefix_path.sh
+[0.372s] -- Up-to-date: /all_sensors_launch/install/all_sensors_launch/share/all_sensors_launch/environment/ament_prefix_path.dsv
+[0.372s] -- Up-to-date: /all_sensors_launch/install/all_sensors_launch/share/all_sensors_launch/environment/path.sh
+[0.373s] -- Up-to-date: /all_sensors_launch/install/all_sensors_launch/share/all_sensors_launch/environment/path.dsv
+[0.373s] -- Up-to-date: /all_sensors_launch/install/all_sensors_launch/share/all_sensors_launch/local_setup.bash
+[0.373s] -- Up-to-date: /all_sensors_launch/install/all_sensors_launch/share/all_sensors_launch/local_setup.sh
+[0.374s] -- Up-to-date: /all_sensors_launch/install/all_sensors_launch/share/all_sensors_launch/local_setup.zsh
+[0.374s] -- Up-to-date: /all_sensors_launch/install/all_sensors_launch/share/all_sensors_launch/local_setup.dsv
+[0.374s] -- Installing: /all_sensors_launch/install/all_sensors_launch/share/all_sensors_launch/package.dsv
+[0.375s] -- Up-to-date: /all_sensors_launch/install/all_sensors_launch/share/ament_index/resource_index/packages/all_sensors_launch
+[0.375s] -- Up-to-date: /all_sensors_launch/install/all_sensors_launch/share/all_sensors_launch/cmake/all_sensors_launchConfig.cmake
+[0.375s] -- Up-to-date: /all_sensors_launch/install/all_sensors_launch/share/all_sensors_launch/cmake/all_sensors_launchConfig-version.cmake
+[0.376s] -- Up-to-date: /all_sensors_launch/install/all_sensors_launch/share/all_sensors_launch/package.xml
+[0.387s] Invoked command in '/all_sensors_launch/build/all_sensors_launch' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /all_sensors_launch/build/all_sensors_launch
