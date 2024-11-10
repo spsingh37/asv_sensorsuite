@@ -97,7 +97,9 @@ RUN curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o 
 RUN apt-get update && apt-get install -y ros-humble-realsense2-*
 
 COPY all_sensors_launch all_sensors_launch
-
+COPY vectornav vectornav
+RUN apt-get install -y terminator
+RUN apt-get install htop
 # Copy the entrypoint script into the container
 COPY entrypoint.sh entrypoint.sh
 
